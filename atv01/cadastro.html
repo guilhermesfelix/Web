@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Cadastro</title>
+		<link rel="stylesheet" type="text/css" href="arquivo.css">
+	</head>
+
+	<body>
+
+		<div>
+			<header>
+				<img src="C:\Users\Guilherme\Desktop\atv01\ufoptopo.jpg" alt="ufoptopo" width="100%">
+			</header>
+		</div>
+
+		<h2>Cadastro de alunos</h2>
+		<h5>Preencha o formulário com os seus dados para realizar o cadastro:</h5>
+
+		<form name="cadastro" method="post" action="sucessoCadastro.html">
+
+				<fieldset class="grupo">
+					<div class="campo">
+						<label for="nome">Nome</label> 
+						<input type="text" name="nome" autofocus />
+					</div>
+
+					<div class="campo">
+						<label for="nome">Matricula</label> 
+						<input type="text" name="mat" placeholder="ex.: 11.1.1111" /> <!--Especifica que um elemento deve receber automaticamente o foco quando a página é carregada-->
+					</div>
+				</fieldset>
+
+				<fieldset class="grupo">
+					<div class="campo"><label for="end">Rua</label> 
+						<input type="text" name="rua" />
+					</div>
+
+					<div class="campo">
+						<label for="end">Número</label> 
+						<input type="text" name="num" maxlength="5" size="5" />
+					</div>
+		
+					<div class="campo">
+						<label for="end">Complemento</label> 
+						<input type="text" name="complemento" />
+					</div>
+
+					<div class="campo">
+						<label for="cidades">Cidade</label> 
+						<select name="cidades">
+							<option value="cidades">Selecione a cidade</option> 
+							<option value="1">Barão de Cocais</option>
+							<option value="2">Belo Horizonte</option>
+							<option value="3">João Monlevade</option>
+						</select>
+					</div>
+
+					<div class="campo">
+						<label for="estado">Estado</label> 
+						<select name="estado"> 
+							<option value="estado">Selecione o Estado</option> 
+							<option value="ac">Acre</option> 
+							<option value="al">Alagoas</option> 
+							<option value="am">Amazonas</option> 
+							<option value="ap">Amapá</option> 
+							<option value="ba">Bahia</option> 
+							<option value="ce">Ceará</option> 
+							<option value="df">Distrito Federal</option> 
+							<option value="es">Espírito Santo</option> 
+							<option value="go">Goiás</option> 
+							<option value="ma">Maranhão</option> 
+							<option value="mt">Mato Grosso</option> 
+							<option value="ms">Mato Grosso do Sul</option> 
+							<option value="mg">Minas Gerais</option> 
+							<option value="pa">Pará</option> 
+							<option value="pb">Paraíba</option> 
+							<option value="pr">Paraná</option> 
+							<option value="pe">Pernambuco</option> 
+							<option value="pi">Piauí</option> 
+							<option value="rj">Rio de Janeiro</option> 
+							<option value="rn">Rio Grande do Norte</option> 
+							<option value="ro">Rondônia</option> 
+							<option value="rs">Rio Grande do Sul</option> 
+							<option value="rr">Roraima</option> 
+							<option value="sc">Santa Catarina</option> 
+							<option value="se">Sergipe</option> 
+							<option value="sp">São Paulo</option> 
+							<option value="to">Tocantins</option> 
+						</select>
+					</div>
+				</fieldset>
+
+				<div class="campo">
+					<label for="sexo">Sexo</label> 
+					<label><input type="radio" name="sexo" value="M" />Masculino</label> <!--com label pode selecionar clicando no texto-->
+					<label><input type="radio" name="sexo" value="F" />Feminino</label>
+				</div>
+
+				<fieldset class="grupo">
+					<div class="campo">
+						<label for="rg">RG</label>
+						<input <input type="text" name="rg" maxlength="10" size="10" /> <!--placeholder = mostra um exemplo de como a informação deve ser dada-->
+					</div>
+
+					<div class="campo">
+						<label for="cpf">CPF</label>
+						<input type="text" name="cpf" maxlength="14" size="14" /> <!--colocar somente numeros e tirar placeholder-->
+					</div>
+				</fieldset>
+
+				<fieldset class="grupo">
+					<div class="campo">
+						<label for="tipoSang">Tipo Sanguíneo</label>  
+						<select name="tipoSang">
+							<option value="tipoSang">Selecione o seu tipo sanguineo</option> 
+							<option value="1">A</option>
+							<option value="1">B</option>
+							<option value="1">AB</option>
+							<option value="1">O</option>
+						</select>
+					</div>
+					
+					<div class="campo">
+						<label for="fatorRH">Fator de RH</label> 
+						<input type="radio" name="fatorRH" value="positivo" /> +
+						<input type="radio" name="fatorRH" value="negativo" /> -
+					</div>
+					
+				</fieldset>
+				
+				<fieldset class="grupo">
+					<div class="campo">
+						<label for="tel">Telefone</label>
+						<input type="tel" name="tel" size="2" maxlength="2" /> <input type="tel" name="tel2" size="8" maxlength="8"/>
+					</div>
+
+					<div class="campo">
+						<label for="cel">Celular</label>
+						<input type="cel" name="cel" size="2" maxlength="2" /> <input type="cel" name="cel2" size="9" maxlength="9"/>
+					</div>
+
+					<div class="campo">
+						<label for="email">E-mail</label>
+						<input type="email" name="email" />
+					</div>
+
+					<div class="campo">
+						<label for="senha">Senha</label>
+						<input type="password" name="senha" />
+					</div>
+
+					<div class="campo">
+						<label for="conf">Confirme a senha</label>
+						<input type="password" name="conf" />
+					</div>
+				</fieldset>
+
+				Acessos: <br/>
+				
+				<label><input type="checkbox" name="acesso" value="biblioteca" />Biblioteca</label>
+            	<label><input type="checkbox" name="acesso" value="ru" />Restaurante Universitário</label>
+            	<label><input type="checkbox" name="acesso" value="clube" />Clube</label>
+            	<label><input type="checkbox" name="acesso" value="campo" />Campo</label>
+				
+				<br />
+			
+				<input class="botao" type="button" value="Voltar" onclick="history.go(-1)"/>
+
+				<input class="botao" type="submit" value="Enviar" />
+
+				<input class="botao" type="reset" value="Limpar" />
+
+		</form>
+
+		<br/>
+
+		<div>
+			<footer>
+				Universidade Federal de Ouro Preto - UFOP <br />
+				Guilherme Silva Felix - 11.1.8264 - guilhermesfelix@gmail.com
+			</footer>
+		</div>
+
+	</body>
+</html>
+

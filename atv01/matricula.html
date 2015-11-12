@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Matricula</title>
+		<link rel="stylesheet" type="text/css" href="arquivo.css">
+	</head>
+
+	<body>
+
+		<div>
+			<header>
+				<img src="C:\Users\Guilherme\Desktop\atv01\ufoptopo.jpg" alt="ufoptopo" width="100%">
+			</header>
+		</div>
+
+		<h2>Matrícula de alunos</h2>
+		<h5>Preencha o formulário para realizar sua matrícula:</h5>
+
+		<form name="cadastro" method="post" action="sucessoMatricula.html">
+
+				<label for="ano">Ano/Semestre</label>
+				<select name="ano">
+					<option value="ano">Selecione o ano/semestre</option> 
+					<option value="1">2016/1</option>
+					<option value="2">2016/2</option>
+					<option value="3">2017/1</option>
+					<option value="1">2017/2</option>
+					<option value="2">2018/1</option>
+					<option value="3">2018/2</option>
+				</select>
+
+				<br />
+
+				<label for="aluno">Aluno</label>
+				<select name="aluno">
+					<option value="aluno">Selecione o aluno</option> 
+					<option value="1">Guilherme</option>
+					<option value="2">Gustavo</option>
+					<option value="3">Talysson</option>
+					<option value="1">Gabriel</option>
+					<option value="2">Mário</option>
+					<option value="3">Maria do Carmo</option>
+				</select>
+
+				<br />
+
+				<label for="disc">Disciplina</label>
+				<select name="disc">
+					<option value="disc">Selecione a disciplina</option> 
+					<option value="1">Banco de Dados</option>
+					<option value="2">Redes de Computadores</option>
+					<option value="3">Web</option>
+					<option value="1">Inteligência Artificial</option>
+					<option value="2">Programação</option>
+					<option value="3">Engenharia de Software</option>
+				</select>
+
+				<br />
+
+				Tipo de aluno: <br />
+				
+				<div class="campo">
+					<label><input type="checkbox" name="acesso" value="regular" />Regular<br /></label>
+					<label><input type="checkbox" name="acesso" value="ouvinte" />Ouvinte</label>
+				</div>
+
+			<input class="botao" type="button" value="Voltar" onclick="history.go(-1)" />
+
+			<input class="botao" type="submit" value="Enviar" />
+
+			<input class="botao" type="reset" value="Limpar" />
+
+		</form>
+
+		<br/>
+
+		<div>
+			<footer>
+				Universidade Federal de Ouro Preto - UFOP <br />
+				Guilherme Silva Felix - 11.1.8264 - guilhermesfelix@gmail.com
+			</footer>
+		</div>
+
+	</body>
+</html>
